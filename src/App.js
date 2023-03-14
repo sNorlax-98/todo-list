@@ -52,7 +52,8 @@ function App() {
       <input type='text' 
       placeholder='tasks'
       onChange={inputChange}
-      value={inputList} />
+      value={inputList} 
+      className="input"/>
       <button onClick={saveItems} className="addbtn" >+</button>
       <button onClick={clear} className="clrbtn"> clear</button>
       <ol>
