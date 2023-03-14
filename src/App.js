@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className='div-main'>
-      <div className='todo'>todo list<br></br>
+      <div className='todo'>Todo list<br></br>
       <input type='text' 
       placeholder='tasks'
       onChange={inputChange}

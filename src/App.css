@@ -2,8 +2,27 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: #fffb00;
 }
 li{
   font-weight: 600;
   list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 8px;
+  color: #fffb00;
+}
+
+ol{
+  margin: 0;
+}
+li:hover{
+  background: linear-gradient(45deg, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff);
+
+}
+body{
+  background-color: black;
+  
 }
