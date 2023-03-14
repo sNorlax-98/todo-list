@@ -25,6 +25,8 @@ function App() {
 
 
   function saveItems(){
+    if (inputList===""){
+    return}
     setItems((prevItems)=>{
       return [...prevItems,inputList]
     })
@@ -51,8 +53,8 @@ function App() {
       placeholder='tasks'
       onChange={inputChange}
       value={inputList} />
-      <button onClick={saveItems} >+</button>
-      <button onClick={clear}> clear</button>
+      <button onClick={saveItems} className="addbtn" >+</button>
+      <button onClick={clear} className="clrbtn"> clear</button>
       <ol>
         {items && items.map((val,index)=>{
           return <Lists text={val} 

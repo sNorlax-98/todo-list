@@ -5,7 +5,7 @@ export default function Lists(props){
         <li 
         onClick={(()=>{
             props.delFunc(props.id)
-        })}>
+        })}>☑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {props.text}
 
         </li>

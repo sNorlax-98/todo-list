@@ -2,7 +2,9 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: #fffb00;
+  color: #000;
+  font-size: x-large;
+  font-weight: 700;
 }
 li{
   font-weight: 600;
@@ -12,17 +14,28 @@ li{
   margin-bottom: 5px;
   margin-top: 5px;
   border-radius: 8px;
-  color: #fffb00;
+  color: #000;
+  max-width: 600px;
+  margin-left: 600px;
+  margin-right: 10px;
 }
 
 ol{
   margin: 0;
 }
 li:hover{
-  background: linear-gradient(45deg, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff);
+  background-color: rgb(51, 228, 198);
 
 }
 body{
-  background-color: black;
+  background-color: #dfe0f6;
   
+}
+addbtn{
+  width: 10px;
+
+}
+
+clrbtn{
+  width: 20px;
 }
