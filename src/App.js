@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Lists from './Lists';
+import { Button, Container, Input, List, Typography } from '@mui/material';
 
 function App() {
   const [inputList,SetInputList] = React.useState("")
@@ -47,16 +48,23 @@ function App() {
   }
 
   return (
-    <div className='div-main'>
-      <div className='todo'>Todo list<br></br>
-      <input type='text' 
+    <Container fixed sx={{bgcolor:'#0f1e96',height:'100vh',width:'100vh'}} className='div-main' >
+      <Container className='todo'><Typography sx={{color:"#effbfe" }} variant='h3'>Todo list</Typography><br></br>
+      <Input sx={{
+        py: 2,
+        display: 'grid',
+        gap: 2,
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        color:'#effbfe'
+      }} type='text' 
       placeholder='tasks'
       onChange={inputChange}
       value={inputList} 
       className="input"/>
-      <button onClick={saveItems} className="addbtn" >+</button>
-      <button onClick={clear} className="clrbtn"> clear</button>
-      <ol>
+      <Button  sx={{m:2,bgcolor:'#effbfe'}} onClick={saveItems}  >+</Button>
+      <Button sx={{m:2,bgcolor:'#effbfe',float:'right'}} onClick={clear}> clear</Button>
+      <List>
         {items && items.map((val,index)=>{
           return <Lists text={val} 
           key={index}
@@ -64,9 +72,9 @@ function App() {
           delFunc={delItem}
           />
         })}
-      </ol>
-      </div>
-    </div>
+      </List>
+      </Container>
+    </Container>
   );
 }
 
