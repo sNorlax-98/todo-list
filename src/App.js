@@ -17,6 +17,7 @@ function App() {
 
   function clear(){
     localStorage.removeItem("some")
+    setItems([])
   }
 
   function inputChange(event){
